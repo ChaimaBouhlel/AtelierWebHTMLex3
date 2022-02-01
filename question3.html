@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form action="redaction.html" method="post" name="">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            votre nom:<input type="text" id="nom" placeholder="votre nom" name="nom">
+            <br>
+            Votre prenom:<input type="text" id="prenom" placeholder="votre prenom" name="prenom">
+            <br>
+            Votre adresse mail:<input type="email" placeholder="votre adresse mail" style="width: 191px; height: 82px;">
+            <br>
+            URL de votre site:<input type="url">
+            <br>
+            Votre age:<input type="number" id="age" placeholder="age" name="age">
+            <br>
+            Votre date de naissance:<input type="date">
+            votre adresse:<textarea type="text" id="adresse" placeholder="adresse" name="adresse">
+        </textarea> <br>
+            Mot de passe:<input type="password" name="pwd" required="required" id="pwd">
+            <br>
+            retapez votre mdp:<input type="password" name="retape" id="retape">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Gestion des groupes et des options
+            </legend>
+
+            Votre groupe:
+            <input type="radio" name="grp" id="grp1">groupe1
+            <input type="radio" name="grp" id="grp2">groupe2
+            <input type="radio" name="grp" id="grp3">groupe3
+            <br>
+            <label for="etu">Num carte étudiant:</label>
+            <input type="text" name="etu" id="etu">
+            <br>
+            choisissez l'option que vous désirez:
+            <select name="option">
+                <option value="html5">html5</option>
+                <option value="android">android</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Flex">Flex</option>
+            </select>
+            <br>
+            <input type="text" name="zone-texte" placeholder="INSAT puis 4 chiffres" pattern="[I][N][S][A][T][0-9]{4}" id="zone-texte">
+        </fieldset>
+        <br>
+        <input type="submit" onclick="" name="valider">
+        <input type="reset" name="réinitialiser">
+    </form>
+</body>
+
+</html>
